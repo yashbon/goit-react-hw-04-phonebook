@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
 import { customAlphabet } from 'nanoid';
@@ -38,7 +38,7 @@ function App() {
     // if (!contacts) {
     //     contacts = [...dataContacts];
     // }
-    console.log(contacts);
+    // console.log(contacts);
 
     // componentDidUpdate(prevState) {
     //     if (contacts !== prevState.contacts) {
@@ -87,9 +87,10 @@ function App() {
     };
 
     const deleteContact = id => {
-        this.setState(PrevState => ({
-            contacts: PrevState.contacts.filter(contact => contact.id !== id),
-        }));
+        // this.setState(PrevState => ({
+        //     contacts: PrevState.contacts.filter(contact => contact.id !== id),
+        // }));
+        setContacts(contacts.filter(contact => contact.id !== id));
     };
 
     // constfilteredContacts = () => {
