@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Component, useState } from 'react';
+import { useState } from 'react';
 import css from './ContactForm.module.css';
 // import { customAlphabet } from 'nanoid';
 
