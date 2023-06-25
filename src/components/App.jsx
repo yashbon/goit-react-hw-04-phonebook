@@ -57,7 +57,7 @@ function App() {
     }, [contacts]);
 
     const handleSubmitForm = contact => {
-        console.log(contact);
+        // console.log(contact);
 
         if (
             contacts.find(
@@ -71,13 +71,13 @@ function App() {
                 name: contact.name,
                 number: contact.number,
             };
-            console.log('newContact: ', newContact);
+            // console.log('newContact: ', newContact);
             // this.setState(({ contacts }) => ({
             //     contacts: [newContact, ...contacts],
             // }));
             // contacts = [newContact, ...contacts];
             setContacts(contacts => [newContact, ...contacts]);
-            console.log('contacts: ', contacts);
+            // console.log('contacts: ', contacts);
         }
     };
 
