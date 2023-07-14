@@ -3,8 +3,11 @@ import css from './Filter.module.css';
 const Filter = props => {
     const { title, onChange } = props;
     return (
-        <label>
-            {title} <br />
+        <>
+            <label>
+                {title}
+                <br />
+            </label>
             <input
                 className={css.filterInput}
                 type="text"
@@ -15,7 +18,7 @@ const Filter = props => {
                 // value={this.state.name}
                 onChange={onChange}
             />
-        </label>
+        </>
     );
 };
 
